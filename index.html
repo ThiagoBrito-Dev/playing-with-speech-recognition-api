@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trabalhando com o Speech Recognition do Chrome</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="h-screen flex flex-col justify-center items-center p-3">
+      <textarea
+        class="
+          h-40
+          w-full
+          resize-y
+          border border-gray-300
+          rounded
+          p-3
+          sm:max-w-screen-sm
+          focus:outline-none focus:border-gray-400
+        "
+        readonly
+      ></textarea>
+      <button
+        type="button"
+        class="
+          flex
+          items-center
+          bg-purple-800
+          text-white
+          px-4
+          py-2
+          mt-4
+          rounded
+          duration-200
+          hover:bg-purple-900
+          focus:outline-none focus:ring-1 focus:ring-purple-800
+        "
+      >
+        Aperte para falar
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
